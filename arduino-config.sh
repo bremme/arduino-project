@@ -19,14 +19,19 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 # ##############################################################################
-ARDUINO_SKETCH="$PWD/main/main.ino"             # Your main sketch
-ARDUINO_PORT="/dev/ttyUSB0"                     # Arduino serial port
-ARDUINO_BAUD=9600                               # Arduino baud rate
 
 
+################################################################################
+# ARDUINO - Configure Arduino binairy and options
+################################################################################
 ARDUINO_BIN=/home/bremme/bin/arduino            # Arduino binairy location
 ARDUINO_OPTIONS="--verbose --preserve-temp-files"
 
+################################################################################
+# SERIAL PORT - Select your Arduino serial port
+###############################################################################
+ARDUINO_PORT="/dev/ttyUSB0"                     # Arduino serial port
+ARDUINO_BAUD=9600                               # Arduino baud rate
 
 ################################################################################
 # BOARD CONFIG - Select the board you are using                                #
@@ -77,6 +82,7 @@ if [[ -z "$(env | grep PS1 | grep Arduino)" ]]; then
   export PS1="\e[1;37m(\e[1;32mArduino\e[1;37m) $PS1"
 fi
 
+ARDUINO_SKETCH="$PWD/main/main.ino"             # Your main sketch
 ARDUINO_SKETCHBOOKPATH=$PWD
 ARDUINO_BUILD_PATH=$PWD/build
 
