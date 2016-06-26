@@ -11,13 +11,13 @@ If you like Arduino, but also like to use your text editor of choice and you're 
 
 # Usage
 
-To get started clone this repro or download zip and extract on your local machine. To clone using git:
+To get started clone this repo or download zip and extract on your local machine. To clone using git:
 
 ```shell
 $ git clone https://github.com/bremme/arduino-project-skeleton
 ```
 
-Open the `arduino-config.sh` file and set the location of your Arduino binairy, serial port, serial speed, Arduino board and optionally a serial monitor program and editor. When done source the `arduino-config.sh` file to load the configuration.
+Open the `arduino-config.sh` file and set the location of your Arduino binary, serial port, serial speed, Arduino board and optionally a serial monitor program and editor. When done source the `arduino-config.sh` file to load the configuration.
 
 ```shell
 $ source arduino-config.sh
