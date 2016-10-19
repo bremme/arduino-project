@@ -23,6 +23,8 @@ Open the `config.sh` file and set the location of your Arduino binary, serial po
 $ source config.sh
 ```
 
+![Image activate](img/activate-environment.png)
+
 The configuration file adds several environmental variables and aliases for verifying (compiling), uploading (compile and flash) and running a serial monitor.
 
 To verify your sketch run:
@@ -36,6 +38,16 @@ To upload your sketch run:
 ```shell
 $ upload
 ```
+
+When you are done working on your project, you can deactivate the environment by:
+
+```shell
+$ deactivate
+```
+
+![Image deactivate](img/deactivate-environment.png)
+
+> If your wondering what shell I'm using: gnome-terminal (emulator), zsh (shell), oh my zsh! (plugin framework)
 
 # Structure
 
