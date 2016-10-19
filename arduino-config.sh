@@ -85,10 +85,8 @@ ARDUINO_EDIT_OPTIONS=""
 
 if [[ -n "$PS1_BAK" ]]; then
   # reset PS1
-  echo "reset PS1"
   PS1=$PS1_BAK
 else
-  echo "backup PS1 into PS1_BAK"
   # backup PS1
   PS1_BAK=$PS1
 fi
